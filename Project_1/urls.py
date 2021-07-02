@@ -20,5 +20,4 @@ urlpatterns = {
 
     path('admin/', admin.site.urls),
     path('accounts/', include('accountapp.urls')),
-    path('opens/', include('openapp.urls'))
 }
