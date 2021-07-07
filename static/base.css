@@ -1,17 +1,17 @@
-.pragmaitc_header_logo{
+.pragmatic_header_logo{
     margin: 2rem 0;
     font-family: 'Comfortaa', cursive;
     /*#        margin : 상하 rem 좌우 ; #*/
 }
 
-.pragmaitc_header_button{
+.pragmatic_header_button{
     margin-bottom: 2rem;
 }
 
-.pragmaitc_footer_logo{
+.pragmatic_footer_logo{
     margin-top: 1.5rem;
 }
 
-.pragmaitc_footer_button{
+.pragmatic_footer_button{
     margin: 1.5rem 0; font-family: 'Comfortaa', cursive;
 }
