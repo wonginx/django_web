@@ -2,26 +2,20 @@
 
 {% block content %}
 
-    <style>
-        .testing {
-            background-color: darkslategray;
-            margin: 1rem;
-            width: 48px;
-            height: 48px;
-            border-radius: .5rem;
-            display: inline-block;
-        }
+    <div style = "margin: 2rem; text-align: center ">
+        <h1>HTTP METHOD</h1>
 
-    </style>
+        <form action="/accounts/hello_world/" method="POST">
+            {% csrf_token %}
+            <input type="text" name="input_text">
 
-    <div style = "height : 20rem; background-color: royalblue;
-     margin: 2rem; border-radius: 1rem; font-size: 2rem ">
-        <h1>TEST</h1>
+            <input type ="submit"
+                   value = "SEND"
+                   class="btn btn-outline-dark rounded-pill px-5" >
 
-    <div class ="testing" style="height: 48px; width: 48px;"></div>
-    <div class ="testing" style="height: 3rem; width: 3rem;"></div>
-    <div class ="testing" style="height: 3em; width: 3em;"></div>
-    <div class ="testing" style="height: 30%; width: 30%;"></div>
+        </form>
+
+        <h3>{{ new_model.text }}</h3>
 
 
 
