@@ -11,12 +11,28 @@
         <span>
             nav2
         </span>
+
+        {% if not user.is_authenticated %}
+        {# 유저 로그인 여부 확인 코드 / 로그인이 되어 있다면 #}
         <span>
-            nav3
+            <a href="{% url 'accountapp:login' %}" >
+                Login
+            </a>
         </span>
         <span>
-            nav4
+            <a href="{% url 'accountapp:create' %}">
+                Sign Up
+            </a>
         </span>
+
+        {#  로그인 되어 있다면 #}
+        {% else %}
+        <span>
+            <a href = "{% url 'accountapp:logout' %}">
+                Logout
+            </a>
+        </span>
+        {% endif %}
     </div>
 
 </div>
