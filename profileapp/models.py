@@ -11,3 +11,4 @@ class Profile(models.Model):
     nickname = models.CharField(max_length=30, unique=True, null=True)
     message = models.CharField(max_length=200, null=True)
     # DB 에 마이그레이션 적용하기 > pip install pillow > makemigration(변화추적) / migrate(실제변화적용)
+
