@@ -12,7 +12,7 @@
                     {{ target_user.profile.nickname }}
                     {% if target_user == user %}
                         <a href="{% url 'profileapp:update' pk=target_user.profile.pk %}"
-                            class="material-icons round_button">
+                           class="material-icons round_button">
                             edit
                         </a>
                     {% endif %}
@@ -26,20 +26,20 @@
                 </h2>
             {% endif %}
         </div>
-        <div>
-            {{ target_user.date_joined }}
-        </div>
+        {#        <div>#} {# 언제 가입했는지 날짜 안보이게 #}
+        {#            {{ target_user.date_joined }}#}
+        {#        </div>#}
 
         {% if user == target_user %}     {# 요청 user, target 동일시에만 아래화면 보여줌 #}
 
             <div>
-                <a href="{% url 'accountapp:update' pk=target_user.pk %}">
-                    Update Info
+                <a href="{% url 'accountapp:update' pk=target_user.pk %}"
+                   class="material-icons round_button mx-1">
+                    settings
                 </a>
-            </div>
-            <div>
-                <a href="{% url 'accountapp:delete' pk=target_user.pk %}">
-                    Quit
+                <a href="{% url 'accountapp:delete' pk=target_user.pk %}"
+                   class="material-icons round_button mx-1">
+                    close
                 </a>
             </div>
 
