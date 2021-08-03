@@ -9,7 +9,7 @@
         </div>
         <div>
             <form action="{% url 'articleapp:create' %}"
-                  method ="post" entype="'multipart/form-data"> {# entype 지정필수 #}
+                  method ="post" enctype="multipart/form-data"> {# entype 지정필수 #}
                 {%  csrf_token %}
 
                 {% bootstrap_form form %}
