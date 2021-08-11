@@ -1,57 +1,70 @@
-.pragmatic_header_logo{
+.pragmatic_header_logo {
     margin: 2rem 0;
     font-family: 'Comfortaa', cursive;
     /*#        margin : 상하 rem 좌우 ; #*/
 }
 
-.pragmatic_header_button{
+.pragmatic_header_button {
     margin-bottom: 2rem;
 }
 
-.pragmatic_footer_logo{
+.pragmatic_footer_logo {
     margin-top: 1.5rem;
 
 }
 
-.pragmatic_footer_button{
-    margin: 1.5rem 0; font-family: 'Comfortaa', cursive;
+.pragmatic_footer_button {
+    margin: 1.5rem 0;
+    font-family: 'Comfortaa', cursive;
 }
 
-.mw-500{
+.mw-500 {
     max-width: 500px;
     padding: 1rem 1.5rem;
 }
 
-.profile_image{
+.profile_image {
     height: 12rem;
     width: 12rem;
     border-radius: 20rem;
     object-fit: cover;
-/*    object-fit >> 이미지 사이즈맞추기 */
+    /*    object-fit >> 이미지 사이즈맞추기 */
 }
 
-.NNS_B{
-    font-family: 'twayair' , cursive;
+.NNS_B {
+    font-family: 'twayair', cursive;
 }
 
-.round_button{
-    color : black;
+.round_button {
+    color: black;
     text-decoration: none; /* 아이콘 언더라인 삭제 */
     box-shadow: 0 0 3px black; /* 그림자 넣기 (그림자위치, 그림자크기) */
-    border-radius : 20rem; /* 둥글게 */
-    padding : 0.3rem;
+    border-radius: 20rem; /* 둥글게 */
+    padding: 0.3rem;
 }
+
 /* 마우스 커서가 올렸을 때 변하는 색상 조정 */
-.round_button:hover{
-    color : dimgrey}
-
-.article_content{
-    font-size : 1.1rem;
-    text-align : left;
+.round_button:hover {
+    color: dimgrey
 }
 
-.article_image{
-    border-radius : 2rem;
-    width:65%;
+.article_content {
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.article_image {
+    border-radius: 2rem;
+    width: 65%;
     box-shadow: 0 0 1rem grey;
+}
+
+.comment_box {
+    text-align: left;
+    border: solid;
+    border-color: #d9d9d9;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+
 }
