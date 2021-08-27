@@ -7,6 +7,7 @@ def decorator(func):
         print('함수 끝!')
     return decorated
 
+# helloworld 사용X
 @decorator
 def hello_world(input_text):
     print(input_text)
